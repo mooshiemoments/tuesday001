@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  
+    <defs>
+      <linearGradient id="bg6278" gradientTransform="rotate(135)">
+        <stop offset="0%" style="stop-color:#D4E9FF"/>
+        <stop offset="100%" style="stop-color:#A8D0F0"/>
+      </linearGradient>
+    </defs>
+    <rect width="200" height="150" fill="url(#bg6278)" rx="16"/>
+  
+  <rect x="30" y="50" width="45" height="60" rx="8" fill="#FFE566"/>
+  <circle cx="40" cy="65" r="4" fill="#FFE566" opacity="1"/>
+  <circle cx="52" cy="65" r="4" fill="#FFE566" opacity="1"/>
+  <circle cx="64" cy="65" r="4" fill="#FFE566" opacity="1"/>
+  <circle cx="40" cy="85" r="4" fill="#FFE566" opacity="1"/>
+  <circle cx="52" cy="85" r="4" fill="#FFE566" opacity="1"/>
+  <circle cx="64" cy="85" r="4" fill="#FFE566" opacity="1"/>
+  <rect x="85" y="50" width="45" height="60" rx="8" fill="#FFB3B3"/>
+  <line x1="93" y1="60" x2="122" y2="60" stroke="#FFB3B3" stroke-width="3"/>
+  <line x1="93" y1="72" x2="122" y2="72" stroke="#FFB3B3" stroke-width="3"/>
+  <line x1="93" y1="84" x2="122" y2="84" stroke="#FFB3B3" stroke-width="3"/>
+  <line x1="93" y1="96" x2="122" y2="96" stroke="#FFB3B3" stroke-width="3"/>
+  <rect x="140" y="50" width="45" height="60" rx="8" fill="#B7E4C7"/>
+  <rect x="148" y="58" width="12" height="12" rx="2" fill="#B7E4C7" opacity="1"/>
+  <rect x="166" y="58" width="12" height="12" rx="2" fill="#B7E4C7" opacity="1"/>
+  <rect x="148" y="80" width="12" height="12" rx="2" fill="#B7E4C7" opacity="1"/>
+  <rect x="166" y="80" width="12" height="12" rx="2" fill="#B7E4C7" opacity="1"/>
+  <g transform="translate(87.5, 110)">
+      <ellipse cx="12.5" cy="20" rx="8.75" ry="10" fill="#7BB8E0"/>
+      <ellipse cx="3.75" cy="8.75" rx="2.5" ry="5" fill="#7BB8E0"/>
+      <ellipse cx="8.75" cy="3.75" rx="2.5" ry="5.5" fill="#7BB8E0"/>
+      <ellipse cx="13.750000000000002" cy="2.5" rx="2.5" ry="5.5" fill="#7BB8E0"/>
+      <ellipse cx="18.75" cy="5" rx="2.5" ry="5" fill="#7BB8E0"/>
+      <ellipse cx="22.5" cy="11.25" rx="2.5" ry="3.75" fill="#7BB8E0"/>
+    </g>
+</svg>

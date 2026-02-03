@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  
+    <defs>
+      <linearGradient id="bg7952" gradientTransform="rotate(135)">
+        <stop offset="0%" style="stop-color:#D0F0F0"/>
+        <stop offset="100%" style="stop-color:#A0E0E0"/>
+      </linearGradient>
+    </defs>
+    <rect width="200" height="150" fill="url(#bg7952)" rx="16"/>
+  
+  <g transform="translate(50, 25)">
+      <circle cx="15" cy="30" r="17.5" fill="#D0F0F0"/>
+      <circle cx="35" cy="20" r="22.5" fill="#D0F0F0"/>
+      <circle cx="60" cy="25" r="20" fill="#D0F0F0"/>
+      <circle cx="80" cy="30" r="17.5" fill="#D0F0F0"/>
+      <rect x="7.5" y="25" width="80" height="20" fill="#D0F0F0"/>
+    </g>
+  <g transform="translate(25, 62.5)">
+      <circle cx="10.5" cy="21" r="12.25" fill="#A0E0E0"/>
+      <circle cx="24.5" cy="14" r="15.75" fill="#A0E0E0"/>
+      <circle cx="42" cy="17.5" r="14" fill="#A0E0E0"/>
+      <circle cx="56" cy="21" r="12.25" fill="#A0E0E0"/>
+      <rect x="5.25" y="17.5" width="56" height="14" fill="#A0E0E0"/>
+    </g>
+  <g transform="translate(110, 55)">
+      <circle cx="12" cy="24" r="14" fill="#E2D9F3"/>
+      <circle cx="28" cy="16" r="18" fill="#E2D9F3"/>
+      <circle cx="48" cy="20" r="16" fill="#E2D9F3"/>
+      <circle cx="64" cy="24" r="14" fill="#E2D9F3"/>
+      <rect x="6" y="20" width="64" height="16" fill="#E2D9F3"/>
+    </g>
+  <path d="M100,106 C80,90 90,80 100,94 C110,80 120,90 100,106Z" fill="#FFB3B3"/>
+  <g>
+      <polygon points="50,34 50.9,39.1 56,40 50.9,40.9 50,46 49.1,40.9 44,40 49.1,39.1" fill="#FFF3B0"/>
+    </g>
+  <g>
+      <polygon points="160,40 160.75,44.25 165,45 160.75,45.75 160,50 159.25,45.75 155,45 159.25,44.25" fill="#FFF3B0"/>
+    </g>
+  <g>
+      <polygon points="80,26 80.6,29.4 84,30 80.6,30.6 80,34 79.4,30.6 76,30 79.4,29.4" fill="#D0F0F0"/>
+    </g>
+</svg>

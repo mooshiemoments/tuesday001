@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  
+    <defs>
+      <linearGradient id="bg7693" gradientTransform="rotate(0)">
+        <stop offset="0%" style="stop-color:#D8F3DC"/>
+        <stop offset="100%" style="stop-color:#B7E4C7"/>
+      </linearGradient>
+    </defs>
+    <rect width="200" height="150" fill="url(#bg7693)" rx="16"/>
+  
+  <rect x="55" y="55" width="90" height="65" rx="6" fill="#B7E4C7" opacity="1"/>
+  <rect x="55" y="55" width="90" height="15" rx="6" fill="#95D5B2" opacity="1"/>
+  <rect x="70" y="35" width="8" height="35" rx="2" fill="#FFB3B3" opacity="1"/>
+  <rect x="90" y="40" width="20" height="25" rx="3" fill="#FFE566" opacity="1"/>
+  <circle cx="125" cy="50" r="12" fill="#B7E4C7" opacity="1"/>
+  <path d="M150 80 L165 65 M150 80 L165 95" stroke="#888" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="165" cy="60" rx="8" ry="12" fill="#95D5B2" opacity="1"/>
+  <ellipse cx="165" cy="100" rx="8" ry="12" fill="#95D5B2" opacity="1"/>
+  <polygon points="40,40 42.93892626146236,45.954915028125264 49.510565162951536,46.90983005625053 44.75528258147577,51.545084971874736 45.877852522924734,58.09016994374947 40,55 34.12214747707527,58.09016994374947 35.24471741852423,51.545084971874736 30.489434837048464,46.90983005625052 37.06107373853764,45.954915028125264" fill="#FFF3B0"/>
+  <polygon points="170,32 172.35114100916988,36.763932022500214 177.60845213036123,37.52786404500042 173.80422606518061,41.236067977499786 174.7022820183398,46.47213595499958 170,44 165.2977179816602,46.47213595499958 166.19577393481939,41.23606797749979 162.39154786963877,37.52786404500042 167.64885899083012,36.763932022500214" fill="#FFE566"/>
+</svg>
