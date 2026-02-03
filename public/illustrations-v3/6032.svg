@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  
+    <defs>
+      <linearGradient id="bg6032" gradientTransform="rotate(0)">
+        <stop offset="0%" style="stop-color:#E0F4FF"/>
+        <stop offset="100%" style="stop-color:#BAE6FD"/>
+      </linearGradient>
+    </defs>
+    <rect width="200" height="150" fill="url(#bg6032)" rx="16"/>
+  
+  <circle cx="33.5397179922893" cy="38.78190874465872" r="4.750848738940817" fill="#E0F4FF" opacity="0.26938109932152654"/><circle cx="85.65901716028748" cy="121.24339764554861" r="4.175622385148927" fill="#E0F4FF" opacity="0.4952581505584021"/><circle cx="122.4559386337205" cy="120.58407626554981" r="4.928928696679577" fill="#E0F4FF" opacity="0.27869757429530184"/><circle cx="115.2729468749385" cy="84.08537998620886" r="3.9265124828798434" fill="#E0F4FF" opacity="0.37991754044330717"/><circle cx="43.875510146608576" cy="73.94219259094825" r="4.861605899064671" fill="#E0F4FF" opacity="0.33859527452186744"/><circle cx="79.33155741884548" cy="9.945380442491114" r="3.278567160447892" fill="#E0F4FF" opacity="0.21641716493395508"/><circle cx="83.90334917439759" cy="70.89768119080873" r="4.297957570362996" fill="#E0F4FF" opacity="0.4378043015110052"/><circle cx="178.9548776364427" cy="77.5309449040833" r="3.011565690223506" fill="#E0F4FF" opacity="0.4205018839104014"/>
+  <circle cx="100" cy="75" r="48" fill="#FFE5D9"/>
+  <circle cx="80" cy="68" r="8" fill="#333"/>
+  <circle cx="120" cy="68" r="8" fill="#333"/>
+  <circle cx="78" cy="65" r="3" fill="white"/>
+  <circle cx="118" cy="65" r="3" fill="white"/>
+  <path d="M72 92 Q100 115 128 92" stroke="#333" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <ellipse cx="60" cy="82" rx="12" ry="7" fill="#FFB3B3" opacity="0.4"/>
+  <ellipse cx="140" cy="82" rx="12" ry="7" fill="#FFB3B3" opacity="0.4"/>
+  
+      <path d="M45,42.25 C39,37 42,34 45,37.75 C48,34 51,37 45,42.25Z" fill="#FFB3B3"/>
+      <path d="M65,26.5 C61,23 63,21 65,23.5 C67,21 69,23 65,26.5Z" fill="#FFB3B3"/>
+      <path d="M30,51.2 C26.8,48.4 28.4,46.8 30,48.8 C31.6,46.8 33.2,48.4 30,51.2Z" fill="#FFB3B3"/>
+    
+</svg>
