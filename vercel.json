@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/activities.json",
+      "destination": "/activities.json"
+    }
+  ]
+}
