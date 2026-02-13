@@ -10,3 +10,4 @@ export { default as EinsteinShareCard } from './EinsteinShareCard';
 export { default as GoldenTicketUnlockModal } from './GoldenTicketUnlockModal';
 export { default as GoldenTicketShareModal } from './GoldenTicketShareModal';
 export { default as InviteCaregiverModal } from './InviteCaregiverModal';
+export { default as ParentalGate } from './ParentalGate';

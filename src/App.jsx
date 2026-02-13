@@ -53,6 +53,7 @@ import MooshieLabsScreen from './components/screens/MooshieLabsScreen';
 import TopicBrowseScreen from './components/screens/TopicBrowseScreen';
 import NotificationSettings from './components/screens/NotificationSettings';
 import EditChildProfile from './components/screens/EditChildProfile';
+import MilestonesScreen from './components/screens/MilestonesScreen';
 
 // Import common components
 import { TabNav, Confetti, MascotImage } from './components/common';
@@ -70,6 +71,7 @@ import {
   GoldenTicketUnlockModal,
   GoldenTicketShareModal,
   InviteCaregiverModal,
+  ParentalGate,
 } from './components/modals';
 
 // =====================================================
@@ -103,6 +105,8 @@ export default function MooshieMomentsApp() {
   const [showGoldenTicketUnlock, setShowGoldenTicketUnlock] = useState(false);
   const [showGoldenTicketShare, setShowGoldenTicketShare] = useState(false);
   const [showInviteModal, setShowInviteModal] = useState(false);
+  const [showParentalGate, setShowParentalGate] = useState(false);
+  const [checkedMilestones, setCheckedMilestones] = useState({});
   
   // Completion Flow
   const [currentFeedback, setCurrentFeedback] = useState(null);
@@ -133,7 +137,7 @@ export default function MooshieMomentsApp() {
     { id: 3, status: 'available' },
   ]);
   const [caregivers, setCaregivers] = useState([
-    { id: '1', name: 'You', email: 'you@email.com', status: 'active', isOwner: true },
+    { id: '1', name: 'You', email: '', status: 'active', isOwner: true },
   ]);
   
   // Get activities from hook
@@ -254,6 +258,7 @@ export default function MooshieMomentsApp() {
           if (data.isPremium) setIsPremium(data.isPremium);
           if (data.goldenTickets) setGoldenTickets(data.goldenTickets);
           if (data.caregivers) setCaregivers(data.caregivers);
+          if (data.checkedMilestones) setCheckedMilestones(data.checkedMilestones);
 
           // Handle activity data with daily refresh check
           if (data.activityData) {
@@ -294,9 +299,9 @@ export default function MooshieMomentsApp() {
   // Save data when it changes
   useEffect(() => {
     if (!isLoading && profile.childName) {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify({ profile, activityData, memories, stats, isPremium, goldenTickets, caregivers }));
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ profile, activityData, memories, stats, isPremium, goldenTickets, caregivers, checkedMilestones }));
     }
-  }, [profile, activityData, memories, stats, isPremium, goldenTickets, caregivers, isLoading]);
+  }, [profile, activityData, memories, stats, isPremium, goldenTickets, caregivers, checkedMilestones, isLoading]);
 
   useEffect(() => {
     if (!isLoading) {
@@ -611,7 +616,8 @@ export default function MooshieMomentsApp() {
                 isPremium={isPremium}
                 stats={stats}
                 onSelectActivity={handleSelectActivity}
-                onShowPaywall={() => setShowPaywall(true)}
+                onShowPaywall={() => setShowParentalGate(true)}
+                onNavigateToMilestones={() => setScreen('milestones')}
                 onToggleFavorite={(id) => {
                   setActivityData(prev => ({
                     ...prev,
@@ -644,7 +650,7 @@ export default function MooshieMomentsApp() {
                   setScreen('topicBrowse');
                 }}
                 onSelectActivity={handleSelectActivity}
-                onShowPaywall={() => setShowPaywall(true)}
+                onShowPaywall={() => setShowParentalGate(true)}
                 onNavigateToLabs={() => setScreen('labs')}
               />
             )}
@@ -657,7 +663,7 @@ export default function MooshieMomentsApp() {
                 activitiesData={activitiesData}
                 allActivities={allActivities}
                 onSelectActivity={handleSelectActivity}
-                onShowPaywall={() => setShowPaywall(true)}
+                onShowPaywall={() => setShowParentalGate(true)}
               />
             )}
       
@@ -673,7 +679,7 @@ export default function MooshieMomentsApp() {
                 activityData={activityData}
                 onSelectActivity={handleSelectActivity}
                 onBack={() => { setScreen('main'); setActiveTab('discover'); setSelectedTopic(null); }}
-                onShowPaywall={() => setShowPaywall(true)}
+                onShowPaywall={() => setShowParentalGate(true)}
                 onToggleFavorite={(id) => {
                   setActivityData(prev => ({
                     ...prev,
@@ -708,7 +714,7 @@ export default function MooshieMomentsApp() {
                       : [...(prev.favorites || []), selectedActivity.id]
                   }));
                 }}
-                onShowPaywall={() => setShowPaywall(true)}
+                onShowPaywall={() => setShowParentalGate(true)}
               />
             )}
       
@@ -722,7 +728,7 @@ export default function MooshieMomentsApp() {
                 activitiesData={activitiesData}
                 allActivities={allActivities}
                 isPremium={isPremium}
-                onShowPaywall={() => setShowPaywall(true)}
+                onShowPaywall={() => setShowParentalGate(true)}
                 onSelectActivity={handleSelectActivity}
               />
             )}
@@ -742,7 +748,7 @@ export default function MooshieMomentsApp() {
                 onNavigateToLabs={() => setScreen('labs')}
                 onNavigateToNotifications={() => setScreen('notificationSettings')}
                 onNavigateToEditProfile={() => setScreen('editProfile')}
-                onShowPaywall={() => setShowPaywall(true)}
+                onShowPaywall={() => setShowParentalGate(true)}
                 onShowResetConfirm={() => setShowResetConfirm(true)}
                 onShowGoldenTicketShare={() => setShowGoldenTicketShare(true)}
                 onShowInviteModal={() => setShowInviteModal(true)}
@@ -764,7 +770,7 @@ export default function MooshieMomentsApp() {
                 isPremium={isPremium}
                 activitiesData={activitiesData}
                 onBack={() => { setScreen('main'); setActiveTab('profile'); }}
-                onShowPaywall={() => setShowPaywall(true)}
+                onShowPaywall={() => setShowParentalGate(true)}
               />
             )}
       
@@ -774,7 +780,7 @@ export default function MooshieMomentsApp() {
                 profile={profile}
                 isPremium={isPremium}
                 onBack={() => { setScreen('main'); setActiveTab('profile'); }}
-                onShowPaywall={() => setShowPaywall(true)}
+                onShowPaywall={() => setShowParentalGate(true)}
               />
             )}
       
@@ -784,6 +790,21 @@ export default function MooshieMomentsApp() {
                 profile={profile}
                 setProfile={setProfile}
                 onBack={() => { setScreen('main'); setActiveTab('profile'); }}
+              />
+            )}
+
+            {/* Milestones Screen */}
+            {screen === 'milestones' && (
+              <MilestonesScreen
+                profile={profile}
+                checkedMilestones={checkedMilestones}
+                onToggleMilestone={(key) => {
+                  setCheckedMilestones(prev => ({
+                    ...prev,
+                    [key]: !prev[key]
+                  }));
+                }}
+                onBack={() => { setScreen('main'); setActiveTab('home'); }}
               />
             )}
 
@@ -805,6 +826,13 @@ export default function MooshieMomentsApp() {
           
           {/* ==================== MODALS (outside scrollable area) ==================== */}
       
+          {showParentalGate && (
+            <ParentalGate
+              onPass={() => { setShowParentalGate(false); setShowPaywall(true); }}
+              onClose={() => setShowParentalGate(false)}
+            />
+          )}
+
           {showPaywall && (
             <Paywall
               profile={profile}

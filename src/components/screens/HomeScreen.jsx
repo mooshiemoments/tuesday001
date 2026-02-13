@@ -226,6 +226,7 @@ const HomeScreenFinal = ({
   onNavigate,
   onShowPaywall,
   onToggleFavorite,
+  onNavigateToMilestones,
   stats = {},
 }) => {
   const [expandedTip, setExpandedTip] = useState(null);
@@ -267,6 +268,25 @@ const HomeScreenFinal = ({
   const todayEncouragement = ENCOURAGEMENT_MESSAGES[0];
   const EncouragementIcon = todayEncouragement.icon;
   
+  // Calculate streak from stats
+  const calculateStreak = () => {
+    const totalMoments = stats.totalMoments || 0;
+    if (totalMoments === 0) return 0;
+    // Simple streak: if they completed an activity today or yesterday, they have a streak
+    const lastDate = stats.lastActivityDate;
+    if (!lastDate) return 0;
+    const today = new Date();
+    const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+    const yesterday = new Date(today);
+    yesterday.setDate(yesterday.getDate() - 1);
+    const yesterdayStr = `${yesterday.getFullYear()}-${String(yesterday.getMonth() + 1).padStart(2, '0')}-${String(yesterday.getDate()).padStart(2, '0')}`;
+    if (lastDate === todayStr || lastDate === yesterdayStr) {
+      return Math.max(1, totalMoments);
+    }
+    return 0;
+  };
+  const currentStreak = calculateStreak();
+
   // Get tips for child's age
   const ageTips = AGE_TIPS[profile.ageBand] || AGE_TIPS['18-24 months'];
 
@@ -290,7 +310,7 @@ const HomeScreenFinal = ({
             style={{ background: '#fff', border: `3px solid ${COLORS.gold}` }}
           >
             <Flame size={18} style={{ color: COLORS.coral }} fill={COLORS.coral} />
-            <span className="font-black text-sm" style={{ color: COLORS.purple }}>{profile.streak} day streak!</span>
+            <span className="font-black text-sm" style={{ color: COLORS.purple }}>{currentStreak || 1} day streak!</span>
           </div>
 
           {/* Settings gear removed - users access profile via bottom nav */}
@@ -724,6 +744,34 @@ const HomeScreenFinal = ({
               </div>
             </div>
           </div>
+        </div>
+
+        {/* ===== DEVELOPMENT MILESTONES CARD ===== */}
+        <div className="pt-4 pb-2">
+          <button
+            onClick={onNavigateToMilestones}
+            className="w-full rounded-2xl p-4 shadow-md flex items-center gap-3 transition-all active:scale-98"
+            style={{
+              background: 'linear-gradient(135deg, #F3E8FF 0%, #FEF3C7 100%)',
+              border: `3px solid ${COLORS.purple}`,
+            }}
+          >
+            <div
+              className="w-12 h-12 rounded-xl flex items-center justify-center"
+              style={{ background: COLORS.purple }}
+            >
+              <span className="text-2xl">📊</span>
+            </div>
+            <div className="flex-1 text-left">
+              <h3 className="font-black text-sm" style={{ color: COLORS.purple }}>
+                {profile.childName}'s Development
+              </h3>
+              <p className="text-xs" style={{ color: COLORS.textLight }}>
+                Track milestones for {profile.ageBand}
+              </p>
+            </div>
+            <ChevronRight size={20} style={{ color: COLORS.purple }} />
+          </button>
         </div>
 
         {/* ===== AGE-BASED TIPS ===== */}

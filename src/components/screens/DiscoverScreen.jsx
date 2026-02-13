@@ -1,3 +1,4 @@
+
 // DiscoverScreen - Final Clean Version
 // No counts, no badges, 4 collections only
 
@@ -84,7 +85,7 @@ const CORE_CATEGORIES = [
     freeCount: 8,
     items: [
       { name: 'Sensory Play', topic: 'Sensory Exploration', image: 'https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=300&h=200&fit=crop' },
-      { name: 'Experiments', topic: 'Science & Physics', image: 'https://images.unsplash.com/photo-1567168544230-6b6e9c0f1b1f?w=300&h=200&fit=crop' },
+      { name: 'Experiments', topic: 'Science & Physics', image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=300&h=200&fit=crop' },
       { name: 'Nature', keyword: 'nature', image: 'https://images.unsplash.com/photo-1476234251651-f353703a034d?w=300&h=200&fit=crop' },
     ]
   },

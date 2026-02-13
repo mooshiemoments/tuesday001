@@ -2,7 +2,7 @@
 // Child profile, Account access, Golden Tickets, Share to Unlock, Mission, Settings, Social
 
 import React, { useState } from 'react';
-import { 
+import {
   Crown,
   Users,
   Plus,
@@ -19,7 +19,11 @@ import {
   Lock,
   Sparkles,
   Target,
-  ExternalLink
+  ExternalLink,
+  Shield,
+  FileText,
+  Mail,
+  RotateCcw
 } from 'lucide-react';
 
 // MOOSHIE BRAND COLORS
@@ -271,9 +275,11 @@ const ProfileScreen = ({
                       Owner
                     </span>
                   </div>
-                  <p className="text-xs" style={{ color: COLORS.textLight }}>
-                    {caregivers[0]?.email || 'your@email.com'}
-                  </p>
+                  {caregivers[0]?.email ? (
+                    <p className="text-xs" style={{ color: COLORS.textLight }}>
+                      {caregivers[0].email}
+                    </p>
+                  ) : null}
                 </div>
               </div>
 
@@ -555,12 +561,33 @@ const ProfileScreen = ({
             <ChevronRight size={20} style={{ color: COLORS.textLight }} />
           </button>
 
+          {/* Restore Purchases */}
+          <button
+            onClick={() => {
+              // In production, this would call StoreKit's restoreCompletedTransactions
+              alert('Restore Purchases: In the native iOS app, this will restore your purchases via the App Store.');
+            }}
+            className="w-full p-4 flex items-center gap-3"
+            style={{ borderBottom: `2px solid #F0F0F0` }}
+          >
+            <div
+              className="w-10 h-10 rounded-xl flex items-center justify-center"
+              style={{ background: COLORS.purplePale }}
+            >
+              <RotateCcw size={20} style={{ color: COLORS.purple }} />
+            </div>
+            <span className="flex-1 text-left font-bold" style={{ color: COLORS.text }}>
+              Restore Purchases
+            </span>
+            <ChevronRight size={20} style={{ color: COLORS.textLight }} />
+          </button>
+
           {/* Reset Data */}
-          <button 
+          <button
             onClick={onShowResetConfirm}
             className="w-full p-4 flex items-center gap-3"
           >
-            <div 
+            <div
               className="w-10 h-10 rounded-xl flex items-center justify-center"
               style={{ background: `${COLORS.red}10` }}
             >
@@ -570,6 +597,67 @@ const ProfileScreen = ({
               Reset All Data
             </span>
             <ChevronRight size={20} style={{ color: COLORS.red }} />
+          </button>
+        </div>
+      </div>
+
+      {/* ===== LEGAL & SUPPORT ===== */}
+      <div className="px-5 py-2">
+        <div
+          className="rounded-2xl overflow-hidden"
+          style={{ background: '#fff', border: `3px solid #F0F0F0` }}
+        >
+          {/* Privacy Policy */}
+          <button
+            onClick={() => window.open('https://mooshiemoments.com/privacy', '_blank')}
+            className="w-full p-4 flex items-center gap-3"
+            style={{ borderBottom: `2px solid #F0F0F0` }}
+          >
+            <div
+              className="w-10 h-10 rounded-xl flex items-center justify-center"
+              style={{ background: COLORS.purplePale }}
+            >
+              <Shield size={20} style={{ color: COLORS.purple }} />
+            </div>
+            <span className="flex-1 text-left font-bold" style={{ color: COLORS.text }}>
+              Privacy Policy
+            </span>
+            <ExternalLink size={16} style={{ color: COLORS.textLight }} />
+          </button>
+
+          {/* Terms of Use */}
+          <button
+            onClick={() => window.open('https://mooshiemoments.com/terms', '_blank')}
+            className="w-full p-4 flex items-center gap-3"
+            style={{ borderBottom: `2px solid #F0F0F0` }}
+          >
+            <div
+              className="w-10 h-10 rounded-xl flex items-center justify-center"
+              style={{ background: COLORS.purplePale }}
+            >
+              <FileText size={20} style={{ color: COLORS.purple }} />
+            </div>
+            <span className="flex-1 text-left font-bold" style={{ color: COLORS.text }}>
+              Terms of Use
+            </span>
+            <ExternalLink size={16} style={{ color: COLORS.textLight }} />
+          </button>
+
+          {/* Contact Support */}
+          <button
+            onClick={() => window.open('mailto:support@mooshiemoments.com', '_blank')}
+            className="w-full p-4 flex items-center gap-3"
+          >
+            <div
+              className="w-10 h-10 rounded-xl flex items-center justify-center"
+              style={{ background: COLORS.purplePale }}
+            >
+              <Mail size={20} style={{ color: COLORS.purple }} />
+            </div>
+            <span className="flex-1 text-left font-bold" style={{ color: COLORS.text }}>
+              Contact Support
+            </span>
+            <ExternalLink size={16} style={{ color: COLORS.textLight }} />
           </button>
         </div>
       </div>
