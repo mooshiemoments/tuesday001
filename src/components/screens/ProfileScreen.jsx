@@ -93,6 +93,31 @@ const ProfileScreen = ({
   onShowShareModal,
   onLogout,
 }) => {
+  const [showExternalGate, setShowExternalGate] = useState(false);
+  const [pendingExternalUrl, setPendingExternalUrl] = useState(null);
+  const [gateAnswer, setGateAnswer] = useState('');
+  const [gateError, setGateError] = useState(false);
+  const [gateNumbers] = useState(() => ({
+    a: Math.floor(Math.random() * 15) + 5,
+    b: Math.floor(Math.random() * 12) + 3,
+  }));
+
+  const handleExternalLink = (url) => {
+    setPendingExternalUrl(url);
+    setShowExternalGate(true);
+    setGateAnswer('');
+    setGateError(false);
+  };
+
+  const handleGateSubmit = () => {
+    if (parseInt(gateAnswer) === gateNumbers.a + gateNumbers.b) {
+      setShowExternalGate(false);
+      window.open(pendingExternalUrl, '_blank');
+    } else {
+      setGateError(true);
+    }
+  };
+
   const availableTickets = goldenTickets.filter(t => t.status === 'available').length;
   const unlockedTopics = UNLOCK_TOPICS.filter(t => t.unlocked).length;
 
@@ -662,15 +687,15 @@ const ProfileScreen = ({
         </div>
       </div>
 
-      {/* ===== 7. SOCIAL LINKS ===== */}
+      {/* ===== 7. SOCIAL LINKS (behind parental gate for Kids Category) ===== */}
       <div className="px-5 py-6">
         <p className="text-xs text-center mb-3 font-bold" style={{ color: COLORS.textLight }}>
           Follow us for daily inspiration
         </p>
         <div className="flex justify-center gap-4">
           {/* Facebook */}
-          <button 
-            onClick={() => window.open('https://www.facebook.com/profile.php?id=61586858073521', '_blank')}
+          <button
+            onClick={() => handleExternalLink('https://www.facebook.com/profile.php?id=61586858073521')}
             className="w-12 h-12 rounded-full flex items-center justify-center shadow-md"
             style={{ background: '#1877F2' }}
           >
@@ -678,8 +703,8 @@ const ProfileScreen = ({
           </button>
 
           {/* TikTok */}
-          <button 
-            onClick={() => window.open('https://www.tiktok.com/@mooshiemoments', '_blank')}
+          <button
+            onClick={() => handleExternalLink('https://www.tiktok.com/@mooshiemoments')}
             className="w-12 h-12 rounded-full flex items-center justify-center shadow-md"
             style={{ background: '#000' }}
           >
@@ -687,15 +712,67 @@ const ProfileScreen = ({
           </button>
 
           {/* Instagram */}
-          <button 
-            onClick={() => window.open('https://www.instagram.com/mooshiemoments', '_blank')}
+          <button
+            onClick={() => handleExternalLink('https://www.instagram.com/mooshiemoments')}
             className="w-12 h-12 rounded-full flex items-center justify-center shadow-md"
             style={{ background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)' }}
           >
             <span className="text-white text-lg">📷</span>
           </button>
         </div>
+        <p className="text-xs text-center mt-2" style={{ color: COLORS.textLight, opacity: 0.7 }}>
+          Opens external site
+        </p>
       </div>
+
+      {/* External Link Parental Gate Modal */}
+      {showExternalGate && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center" style={{ background: 'rgba(0,0,0,0.5)' }}>
+          <div className="mx-6 p-6 rounded-3xl shadow-2xl" style={{ background: '#fff', maxWidth: 340 }}>
+            <div className="text-center mb-4">
+              <Shield size={32} style={{ color: COLORS.purple, margin: '0 auto 8px' }} />
+              <h3 className="text-lg font-black" style={{ color: COLORS.purple }}>Leaving Mooshie</h3>
+              <p className="text-sm mt-1" style={{ color: COLORS.textLight }}>
+                This link opens an external website. Parents, please solve this to continue:
+              </p>
+            </div>
+            <div className="text-center mb-4">
+              <p className="text-2xl font-black" style={{ color: COLORS.text }}>
+                {gateNumbers.a} + {gateNumbers.b} = ?
+              </p>
+              <input
+                type="number"
+                value={gateAnswer}
+                onChange={(e) => { setGateAnswer(e.target.value); setGateError(false); }}
+                onKeyDown={(e) => e.key === 'Enter' && handleGateSubmit()}
+                className="mt-3 w-24 text-center text-2xl font-bold p-2 rounded-xl"
+                style={{ border: `3px solid ${gateError ? COLORS.red : COLORS.purple}`, color: COLORS.text }}
+                placeholder="?"
+                autoFocus
+              />
+              {gateError && (
+                <p className="text-xs mt-1" style={{ color: COLORS.red }}>That's not right, try again</p>
+              )}
+            </div>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setShowExternalGate(false)}
+                className="flex-1 py-3 rounded-xl font-bold text-sm"
+                style={{ background: '#f5f5f5', color: COLORS.textLight }}
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleGateSubmit}
+                className="flex-1 py-3 rounded-xl font-bold text-sm text-white"
+                style={{ background: COLORS.purple }}
+              >
+                Continue
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* App version */}
       <p className="text-center text-xs pb-4" style={{ color: COLORS.textLight }}>

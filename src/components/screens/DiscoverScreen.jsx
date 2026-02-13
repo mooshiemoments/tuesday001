@@ -72,7 +72,7 @@ const CORE_CATEGORIES = [
     freeCount: 8,
     items: [
       { name: 'Colors', keyword: 'color', image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=300&h=200&fit=crop' },
-      { name: 'Numbers', keyword: 'number', image: 'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=300&h=200&fit=crop' },
+      { name: 'Numbers', keyword: 'number', image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?w=300&h=200&fit=crop' },
       { name: 'Letters', keyword: 'letter', image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=300&h=200&fit=crop' },
       { name: 'Shapes', keyword: 'shape', image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?w=300&h=200&fit=crop' },
     ]
@@ -100,7 +100,7 @@ const PREMIUM_CATEGORIES = [
     color: COLORS.gold,
     freeCount: 2,
     items: [
-      { name: 'Stuffed Animals', image: 'https://images.unsplash.com/photo-1558637845-c8b7ead71a3e?w=300&h=200&fit=crop' },
+      { name: 'Stuffed Animals', image: 'https://images.unsplash.com/photo-1535572290543-960a8046f5af?w=300&h=200&fit=crop' },
       { name: 'Blocks', image: 'https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=300&h=200&fit=crop' },
       { name: 'Balls', image: 'https://images.unsplash.com/photo-1519638399535-1b036603ac77?w=300&h=200&fit=crop' },
       { name: 'Play Dough', image: 'https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=300&h=200&fit=crop' },
@@ -125,7 +125,7 @@ const PREMIUM_CATEGORIES = [
     color: COLORS.purple,
     freeCount: 2,
     items: [
-      { name: 'Word Play', image: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=300&h=200&fit=crop' },
+      { name: 'Word Play', image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=300&h=200&fit=crop' },
       { name: 'Rhyming', image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&h=200&fit=crop' },
       { name: 'Storytelling', image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=300&h=200&fit=crop' },
     ]

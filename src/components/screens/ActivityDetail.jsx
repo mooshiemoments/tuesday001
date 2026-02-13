@@ -180,22 +180,20 @@ const ActivityDetailMooshie = ({
         <Star className="absolute top-12 right-20 opacity-40" size={24} fill={COLORS.gold} style={{ color: COLORS.gold }} />
       </div>
 
-      {/* Header */}
-      <div className="relative px-4 pt-4">
-        <button 
+      {/* Header - sticky back button */}
+      <div className="sticky top-0 left-0 right-0 z-30 px-4 pt-4 pb-2 flex items-center justify-between">
+        <button
           onClick={onBack}
-          className="absolute top-4 left-4 z-10 w-12 h-12 rounded-2xl flex items-center justify-center shadow-lg"
+          className="w-12 h-12 rounded-2xl flex items-center justify-center shadow-lg"
           style={{ background: '#fff', border: `3px solid ${COLORS.purple}` }}
         >
           <ArrowLeft size={24} style={{ color: COLORS.purple }} />
         </button>
-        <div className="absolute top-4 right-4 z-10">
-          <FavoriteButton isFavorite={isFavorite} onToggle={onToggleFavorite} />
-        </div>
+        <FavoriteButton isFavorite={isFavorite} onToggle={onToggleFavorite} />
       </div>
 
       {/* Hero - Toy Block Style */}
-      <div className="px-5 pt-14 pb-6">
+      <div className="px-5 pt-4 pb-6">
         <div className="relative max-w-sm mx-auto">
           {/* Stacked blocks effect */}
           <div 

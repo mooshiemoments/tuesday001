@@ -230,15 +230,24 @@ const PlayScreen = ({
       <div className="px-5 pt-4 pb-3 flex items-center justify-between">
         <h1 className="text-2xl font-black" style={{ color: COLORS.purple }}>Quick Play</h1>
         
-        {/* Premium badge only */}
-        {isPremium && (
-          <div 
+        {/* Premium badge / Upgrade button */}
+        {isPremium ? (
+          <div
             className="px-3 py-2 rounded-xl flex items-center gap-1.5"
             style={{ background: COLORS.goldLight, border: `2px solid ${COLORS.gold}` }}
           >
             <Crown size={16} style={{ color: COLORS.gold }} fill={COLORS.gold} />
             <span className="text-xs font-bold" style={{ color: '#92400E' }}>Premium</span>
           </div>
+        ) : (
+          <button
+            onClick={() => onShowPaywall && onShowPaywall()}
+            className="px-3 py-2 rounded-xl flex items-center gap-1.5"
+            style={{ background: COLORS.goldLight, border: `2px solid ${COLORS.gold}` }}
+          >
+            <Crown size={16} style={{ color: COLORS.gold }} fill={COLORS.gold} />
+            <span className="text-xs font-bold" style={{ color: '#92400E' }}>Premium</span>
+          </button>
         )}
       </div>
 
