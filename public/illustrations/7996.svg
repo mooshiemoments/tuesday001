@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <defs>
+    <linearGradient id="bg7996" gradientTransform="rotate(45)">
+      <stop offset="0%" style="stop-color:#D0F0F0"/>
+      <stop offset="100%" style="stop-color:#A0E0E0"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="150" fill="url(#bg7996)" rx="16"/>
+  <circle cx="49.64779760412057" cy="48.014593766765756" r="2.1916001665322256" fill="#D0F0F0" opacity="0.3"/><circle cx="99.51152150060807" cy="133.33199368048554" r="3.3012482260601246" fill="#D0F0F0" opacity="0.3"/><circle cx="51.09174989715939" cy="122.04161180266055" r="4.620143186799169" fill="#D0F0F0" opacity="0.3"/><circle cx="79.36424078952768" cy="89.63622028309146" r="2.956083168223813" fill="#D0F0F0" opacity="0.3"/><circle cx="75.28220212607266" cy="92.67373114116708" r="4.7142435821706385" fill="#D0F0F0" opacity="0.3"/><circle cx="171.59164554541348" cy="73.13214675752988" r="4.901316185670112" fill="#D0F0F0" opacity="0.3"/>
+  <circle cx="100" cy="75" r="45" fill="#D0F0F0" opacity="1"/>
+  <circle cx="100" cy="75" r="40" fill="white" opacity="1"/>
+  <line x1="100" y1="42" x2="100" y2="52" stroke="#70D0D0" stroke-width="2"/>
+  <line x1="116.5" y1="46.421161675113524" x2="114" y2="50.751288694035715" stroke="#70D0D0" stroke-width="2"/>
+  <line x1="128.57883832488648" y1="58.5" x2="124.24871130596428" y2="61" stroke="#70D0D0" stroke-width="2"/>
+  <line x1="133" y1="75" x2="123" y2="75" stroke="#70D0D0" stroke-width="2"/>
+  <line x1="128.57883832488648" y1="91.5" x2="124.24871130596429" y2="89" stroke="#70D0D0" stroke-width="2"/>
+  <line x1="116.5" y1="103.57883832488648" x2="114" y2="99.24871130596429" stroke="#70D0D0" stroke-width="2"/>
+  <line x1="100" y1="108" x2="100" y2="98" stroke="#70D0D0" stroke-width="2"/>
+  <line x1="83.5" y1="103.57883832488648" x2="86" y2="99.24871130596428" stroke="#70D0D0" stroke-width="2"/>
+  <line x1="71.42116167511352" y1="91.50000000000001" x2="75.75128869403572" y2="89.00000000000001" stroke="#70D0D0" stroke-width="2"/>
+  <line x1="67" y1="75" x2="77" y2="75" stroke="#70D0D0" stroke-width="2"/>
+  <line x1="71.42116167511352" y1="58.5" x2="75.75128869403572" y2="61" stroke="#70D0D0" stroke-width="2"/>
+  <line x1="83.49999999999999" y1="46.42116167511353" x2="85.99999999999999" y2="50.75128869403572" stroke="#70D0D0" stroke-width="2"/>
+  <line x1="100" y1="75" x2="100" y2="55" stroke="#70D0D0" stroke-width="4" stroke-linecap="round"/>
+  <line x1="100" y1="75" x2="118" y2="85" stroke="#FFB3B3" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="100" cy="75" r="5" fill="#70D0D0" opacity="1"/>
+  <polygon points="45,33 48.52671151375484,40.14589803375031 56.412678195541844,41.291796067500634 50.70633909777092,46.85410196624969 52.05342302750968,54.70820393249937 45,51 37.94657697249032,54.70820393249937 39.29366090222908,46.85410196624969 33.587321804458156,41.29179606750063 41.47328848624516,40.14589803375031" fill="#FFF3B0"/>
+</svg>

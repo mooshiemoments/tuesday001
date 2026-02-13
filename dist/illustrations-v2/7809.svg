@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  
+    <defs>
+      <linearGradient id="bg7809" gradientTransform="rotate(90)">
+        <stop offset="0%" style="stop-color:#FFE4EC"/>
+        <stop offset="100%" style="stop-color:#FFC8DD"/>
+      </linearGradient>
+    </defs>
+    <rect width="200" height="150" fill="url(#bg7809)" rx="16"/>
+  
+  <ellipse cx="100" cy="95" rx="55" ry="20" fill="#F5F5F5" opacity="1"/>
+  <ellipse cx="100" cy="90" rx="50" ry="18" fill="white" opacity="1"/>
+  <circle cx="80" cy="75" r="18" fill="#FFB3B3" opacity="1"/>
+  <rect x="78" y="55" width="4" height="10" rx="1" fill="#8B4513" opacity="1"/>
+  <path d="M88,50 Q94.4,58 88,66 Q81.6,58 88,50Z" fill="#B7E4C7" transform="rotate(30 88 58)"/>
+  <path d="M110 90 Q130 60 150 80" stroke="#FFE566" stroke-width="16" fill="none" stroke-linecap="round"/>
+</svg>

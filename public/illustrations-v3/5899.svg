@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  
+    <defs>
+      <linearGradient id="bg5899" gradientTransform="rotate(135)">
+        <stop offset="0%" style="stop-color:#F0F7FF"/>
+        <stop offset="100%" style="stop-color:#DCE8F5"/>
+      </linearGradient>
+    </defs>
+    <rect width="200" height="150" fill="url(#bg5899)" rx="16"/>
+  
+  <circle cx="92.76554771986412" cy="78.40974821356212" r="3.501278341498619" fill="#DCE8F5" opacity="0.32604643938557276"/><circle cx="152.52939737183624" cy="125.1686325236733" r="4.233262585915327" fill="#DCE8F5" opacity="0.4633380900258544"/><circle cx="166.46083670202643" cy="87.8935193797588" r="4.800518291689514" fill="#DCE8F5" opacity="0.4744186579192956"/><circle cx="64.47418184434355" cy="137.31313440694066" r="2.920259709146194" fill="#DCE8F5" opacity="0.4748930239956735"/><circle cx="3.235769305668157" cy="69.87822236596912" r="2.1444134627809035" fill="#DCE8F5" opacity="0.3246407368513246"/><circle cx="132.11600509876007" cy="16.80944303616343" r="2.1132045620370263" fill="#DCE8F5" opacity="0.43715666147472804"/><circle cx="24.92556626602891" cy="14.486885036058084" r="2.8811256148428583" fill="#DCE8F5" opacity="0.3750495176833283"/><circle cx="6.7746772641839925" cy="74.96070068917788" r="4.958521106524131" fill="#DCE8F5" opacity="0.3114754865935538"/>
+  
+          <ellipse cx="56.608053827103504" cy="95" rx="12" ry="8" fill="#C7D9EB"/>
+          <rect x="66.6080538271035" y="60" width="4" height="35" fill="#C7D9EB"/>
+        
+  
+          <ellipse cx="94.44826803464821" cy="70" rx="12" ry="8" fill="#DCE8F5"/>
+          <rect x="104.44826803464821" y="35" width="4" height="35" fill="#DCE8F5"/>
+        
+  
+          <ellipse cx="148.8403691026224" cy="90" rx="12" ry="8" fill="#C7D9EB"/>
+          <rect x="158.8403691026224" y="55" width="4" height="35" fill="#C7D9EB"/>
+        
+  
+      <text x="40" y="40" fill="#C7D9EB" font-size="14" opacity="0.7">♪</text>
+      <text x="55" y="30" fill="#C7D9EB" font-size="12" opacity="0.5">♫</text>
+      <text x="30" y="52" fill="#C7D9EB" font-size="10" opacity="0.4">♪</text>
+    
+  
+      <text x="150" y="50" fill="#FFB3B3" font-size="14" opacity="0.7">♪</text>
+      <text x="165" y="40" fill="#FFB3B3" font-size="12" opacity="0.5">♫</text>
+      <text x="140" y="62" fill="#FFB3B3" font-size="10" opacity="0.4">♪</text>
+    
+  <path d="M82 30 Q100 26 118 30" stroke="#C7D9EB" stroke-width="2" fill="none" opacity="0.6"/><path d="M76 36 Q100 32 124 36" stroke="#C7D9EB" stroke-width="2" fill="none" opacity="0.44999999999999996"/><path d="M70 42 Q100 38 130 42" stroke="#C7D9EB" stroke-width="2" fill="none" opacity="0.3"/>
+</svg>

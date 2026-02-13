@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  
+    <defs>
+      <linearGradient id="bg1080" gradientTransform="rotate(135)">
+        <stop offset="0%" style="stop-color:#FFE4EC"/>
+        <stop offset="100%" style="stop-color:#FFC8DD"/>
+      </linearGradient>
+    </defs>
+    <rect width="200" height="150" fill="url(#bg1080)" rx="16"/>
+  
+  <path d="M70 40 L70 80 L55 110 L105 110 L90 80 L90 40" fill="none" stroke="#FFAFCC" stroke-width="3"/>
+  <rect x="65" y="35" width="30" height="10" rx="2" fill="#FFAFCC" opacity="1"/>
+  <path d="M72 82 L58 108 L102 108 L88 82" fill="#B7E4C7"/>
+  <circle cx="75" cy="95" r="4" fill="#D8F3DC" opacity="1"/>
+  <circle cx="85" cy="90" r="3" fill="#D8F3DC" opacity="1"/>
+  <circle cx="90" cy="100" r="5" fill="#D8F3DC" opacity="1"/>
+  <circle cx="145" cy="60" r="25" fill="#FFE4EC" opacity="1"/>
+  <circle cx="145" cy="60" r="20" fill="#D4E9FF" opacity="1"/>
+  <rect x="162" y="78" width="8" height="30" rx="2" fill="#FFAFCC" opacity="1"/>
+  <g>
+      <polygon points="120,32 121.2,38.8 128,40 121.2,41.2 120,48 118.8,41.2 112,40 118.8,38.8" fill="#FFE566"/>
+    </g>
+  <polygon points="50,42 52.35114100916989,46.763932022500214 57.60845213036123,47.52786404500042 53.804226065180615,51.236067977499786 54.70228201833979,56.47213595499958 50,54 45.29771798166021,56.47213595499958 46.195773934819385,51.23606797749979 42.39154786963877,47.52786404500042 47.64885899083011,46.763932022500214" fill="#FFF3B0"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  
+    <defs>
+      <linearGradient id="bg5406" gradientTransform="rotate(0)">
+        <stop offset="0%" style="stop-color:#FFF3B0"/>
+        <stop offset="100%" style="stop-color:#FFE566"/>
+      </linearGradient>
+    </defs>
+    <rect width="200" height="150" fill="url(#bg5406)" rx="16"/>
+  
+  <rect x="30" y="85" width="55" height="30" rx="12" fill="#FFB3B3"/>
+  <rect x="75" y="60" width="50" height="28" rx="12" fill="#B7E4C7"/>
+  <rect x="115" y="40" width="45" height="25" rx="12" fill="#C9B8E8"/>
+  <path d="M165 35 Q175 30 165 25" stroke="#FFE566" stroke-width="2" fill="none" opacity="0.9"/>
+  <path d="M160 43 Q172 38 160 33" stroke="#FFE566" stroke-width="2" fill="none" opacity="0.75"/>
+  <path d="M155 51 Q169 46 155 41" stroke="#FFE566" stroke-width="2" fill="none" opacity="0.6000000000000001"/>
+  <path d="M150 59 Q166 54 150 49" stroke="#FFE566" stroke-width="2" fill="none" opacity="0.45000000000000007"/>
+  <g>
+      <polygon points="50,40 51.5,48.5 60,50 51.5,51.5 50,60 48.5,51.5 40,50 48.5,48.5" fill="#FFF3B0"/>
+    </g>
+  <g>
+      <polygon points="160,72 161.2,78.8 168,80 161.2,81.2 160,88 158.8,81.2 152,80 158.8,78.8" fill="#FFE566"/>
+    </g>
+</svg>

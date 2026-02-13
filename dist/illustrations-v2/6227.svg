@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  
+    <defs>
+      <linearGradient id="bg6227" gradientTransform="rotate(0)">
+        <stop offset="0%" style="stop-color:#D8F3DC"/>
+        <stop offset="100%" style="stop-color:#B7E4C7"/>
+      </linearGradient>
+    </defs>
+    <rect width="200" height="150" fill="url(#bg6227)" rx="16"/>
+  
+  <ellipse cx="100" cy="70" rx="45" ry="55" fill="#95D5B2" opacity="1"/>
+  <ellipse cx="100" cy="70" rx="40" ry="50" fill="#D4E9FF" opacity="1"/>
+  <ellipse cx="85" cy="55" rx="10" ry="15" fill="white" opacity="0.6"/>
+  <rect x="90" y="120" width="20" height="25" rx="4" fill="#95D5B2"/>
+  <g>
+      <polygon points="50,37 51.2,43.8 58,45 51.2,46.2 50,53 48.8,46.2 42,45 48.8,43.8" fill="#FFF3B0"/>
+    </g>
+  <g>
+      <polygon points="150,44 150.9,49.1 156,50 150.9,50.9 150,56 149.1,50.9 144,50 149.1,49.1" fill="#FFE566"/>
+    </g>
+</svg>

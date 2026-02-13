@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <defs>
+    <linearGradient id="bg5095" gradientTransform="rotate(45)">
+      <stop offset="0%" style="stop-color:#F0F7FF"/>
+      <stop offset="100%" style="stop-color:#DCE8F5"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="150" fill="url(#bg5095)" rx="16"/>
+  <circle cx="73.26572752877837" cy="22.28859136249639" r="14.044557767017523" fill="#FFB3B3" opacity="0.4"/>
+  <circle cx="171.42291414143983" cy="36.977671975123485" r="8.184928235323241" fill="#A8D0F0" opacity="0.4"/>
+  <circle cx="98.30599355347658" cy="53.06641414444812" r="5.274699856151983" fill="#FFE566" opacity="0.4"/>
+  <circle cx="69.77897939526883" cy="47.67473032969974" r="6.640961894099746" fill="#FFB3B3" opacity="0.4"/>
+  <circle cx="54.69535571697634" cy="32.53062040015038" r="13.092247682998277" fill="#A8D0F0" opacity="0.4"/>
+  <circle cx="121.18363199679152" cy="43.21481746794234" r="11.37439340660194" fill="#FFE566" opacity="0.4"/>
+  <rect x="49.42172547487644" y="76.65220559690079" width="35" height="38.347794403099215" rx="4" fill="#FFB3B3"/>
+  <ellipse cx="66.92172547487644" cy="68.65220559690079" rx="10" ry="8" fill="#FFB3B3" opacity="1"/>
+  <rect x="104.11735538342327" y="69.58577289581217" width="35" height="45.41422710418783" rx="4" fill="#A8D0F0"/>
+  <ellipse cx="121.61735538342327" cy="61.58577289581217" rx="10" ry="8" fill="#A8D0F0" opacity="1"/>
+  <rect x="155.5928057984056" y="75.34751022205455" width="35" height="39.65248977794545" rx="4" fill="#FFE566"/>
+  <ellipse cx="173.0928057984056" cy="67.34751022205455" rx="10" ry="8" fill="#FFE566" opacity="1"/>
+  <rect x="165" y="50" width="8" height="40" rx="2" fill="#8B4513"/>
+  <rect x="163" y="85" width="12" height="20" rx="3" fill="#DCE8F5"/>
+</svg>
