@@ -26,7 +26,7 @@ const ACTIVITIES_BY_AGE = {
     topicColor: '#4ECDC4',
     items: ['Shallow container', 'Warm water', 'Floating toys'],
     rating: '4.9',
-    parentQuote: 'She was mesmerized for 20 minutes!',
+    parentQuote: 'Mesmerized for 20 minutes straight!',
     parentName: 'Jessica'
   },
   '1-2 years': {
@@ -38,7 +38,7 @@ const ACTIVITIES_BY_AGE = {
     topicColor: COLORS.purple,
     items: ['Colored cups', 'Pom poms or snacks'],
     rating: '4.8',
-    parentQuote: 'He learned his colors so fast!',
+    parentQuote: 'Learned colors so fast with this!',
     parentName: 'Michael'
   },
   '2-3 years': {
@@ -50,7 +50,7 @@ const ACTIVITIES_BY_AGE = {
     topicColor: COLORS.coral,
     items: ['Food coloring', 'Clear cups', 'Water'],
     rating: '4.9',
-    parentQuote: 'She thought I was a wizard!',
+    parentQuote: 'Thought I was a wizard!',
     parentName: 'Emma'
   },
   '3-4 years': {
@@ -62,7 +62,7 @@ const ACTIVITIES_BY_AGE = {
     topicColor: '#4ECDC4',
     items: ['Ice cube tray', 'Small toys', 'Warm water'],
     rating: '4.9',
-    parentQuote: 'Kept him busy for an hour!',
+    parentQuote: 'Kept the little one busy for an hour!',
     parentName: 'David'
   }
 };
